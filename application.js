@@ -359,7 +359,7 @@ function renderHours(container, template, collection, type){
             $(".hours_heading").show()
         }
         else {
-            $(".hours_heading").hide()
+            $("#closed_title").hide()
         }
     }
     $.each( collection , function( key, val ) {
