@@ -334,6 +334,12 @@ function renderHours(container, template, collection, type){
         });
         collection = [];
         collection = item_list;
+        if(collection.length > 0){
+            $("#reduced_title").show()
+        }
+        else {
+            $("#closed_title").hide()
+        }
     }
     if (type == "closed_hours") {
         $.each( collection , function( key, val ) {
@@ -356,7 +362,7 @@ function renderHours(container, template, collection, type){
         collection = []
         collection = item_list;
         if(collection.length > 0){
-            $("#close_title").show()
+            $("#closed_title").show()
         }
         else {
             $("#closed_title").hide()
