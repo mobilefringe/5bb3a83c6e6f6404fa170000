@@ -356,7 +356,7 @@ function renderHours(container, template, collection, type){
         collection = []
         collection = item_list;
         if(collection.length > 0){
-            $(".hours_heading").show()
+            $("#close_title").show()
         }
         else {
             $("#closed_title").hide()
