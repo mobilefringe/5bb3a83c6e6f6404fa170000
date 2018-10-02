@@ -358,6 +358,9 @@ function renderHours(container, template, collection, type){
         if(collection.length > 0){
             $(".hours_heading").show()
         }
+        else {
+            $(".hours_heading").hide()
+        }
     }
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
