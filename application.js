@@ -1,3 +1,4 @@
+var default_image_url = "//codecloud.cdn.speedyrails.net/sites/5bad55136e6f646976330000/image/png/1538496378502/LamptonMallLogoSquare.png"
 function renderBanner(banner_template,home_banner,banners){
     var item_list = [];
     var item_rendered = [];
@@ -71,12 +72,12 @@ function renderEvents(container, template, collection, centre){
         
         // English Image
         if (val.event_image_url_abs.indexOf('missing.png') > 0){
-            val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.event_image_url_abs = default_image_url;
         }
         // French Image
         if (val.event_image2_url_abs.indexOf('missing.png') > 0){
             if (val.event_image_url_abs.indexOf('missing.png') > 0){
-                val.event_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.event_image2_url_abs = default_image_url;
             } else {
                 val.event_image2_url_abs = val.event_image_url_abs;
             }
@@ -150,7 +151,7 @@ function renderEventDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.store_image = default_image_url;
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -334,12 +335,6 @@ function renderHours(container, template, collection, type){
         });
         collection = [];
         collection = item_list;
-        if(collection.length > 0){
-            $("#reduced_title").show()
-        }
-        else {
-            $("#closed_title").hide()
-        }
     }
     if (type == "closed_hours") {
         $.each( collection , function( key, val ) {
@@ -361,12 +356,6 @@ function renderHours(container, template, collection, type){
         });
         collection = []
         collection = item_list;
-        if(collection.length > 0){
-            $("#closed_title").show()
-        }
-        else {
-            $("#closed_title").hide()
-        }
     }
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
@@ -388,13 +377,13 @@ function renderJobs(container, template, collection, mall_name){
             val.store_show = "display: inline-block";
             val.mall_show = "display: none"
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.img_url = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.img_url = default_image_url;
             } else {
                 val.img_url = store_details.store_front_url_abs;
             }
         } else {
             val.store_name = mall_name;
-            val.img_url = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.img_url = default_image_url;
             val.store_show = "display: none";
             val.mall_show = "display: inline-block"
         }
@@ -456,7 +445,7 @@ function renderJobDetails(container, template, collection, mall_name){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                val.store_image = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.store_image = default_image_url;
             } else {
                 val.store_image = store_details.store_front_url_abs;    
             }
@@ -477,7 +466,7 @@ function renderJobDetails(container, template, collection, mall_name){
             val.store_link_show = "display: block;";
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.store_image = default_image_url;
             val.website_show = "display:none";
             val.phone_show = "display:none";
             val.store_link_show = "display: none";
@@ -526,12 +515,12 @@ function renderPosts(container, template, collection){
     $.each( collection , function( key, val ) {
         // English Image
         if (val.image_url.indexOf('missing.png') > 0) {
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.image_url = default_image_url;
         }
         // French Image
         if (val.image_url2.indexOf('missing.png') > 0) {
             if (val.image_url.indexOf('missing.png') > 0) {
-                val.image_url2 = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.image_url2 = default_image_url;
             } else {
                 val.image_url2 = val.image_url;
             }
@@ -633,7 +622,7 @@ function renderPromotions(container, template, collection, mall_name){
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                    val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                    val.promo_image_url_abs = default_image_url;
                 } else {
                     val.promo_image_url_abs = store_details.store_front_url_abs;
                 }
@@ -642,7 +631,7 @@ function renderPromotions(container, template, collection, mall_name){
             if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                     if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                        val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                        val.promo_image_url_abs = default_image_url;
                     } else {
                         val.promo_image_url_abs = store_details.store_front_url_abs;
                     }
@@ -660,12 +649,12 @@ function renderPromotions(container, template, collection, mall_name){
             
             // English Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.promo_image_url_abs = default_image_url;
             }
             // French Image
             if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    val.promo_image2_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                    val.promo_image2_url_abs = default_image_url;
                 } else {
                     val.promo_image2_url_abs = val.promo_image_url_abs;
                 }
@@ -727,7 +716,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             val.store_show = "display:block";
             
             if (store_details.store_front_url_abs.indexOf('missing') > 0) {
-                val.store_image = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+                val.store_image = default_image_url;
             } else {
                 val.store_image = store_details.store_front_url_abs;
             }
@@ -763,7 +752,7 @@ function renderPromoDetails(container, template, collection, mall_name){
             }
         } else {
             val.store_name = mall_name;
-            val.store_image = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.store_image = default_image_url;
             val.store_show = "display:none";
             val.phone_show = "display:none";
             val.show = "display:none";
@@ -874,7 +863,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url_abs).indexOf('missing.png') > 0){
-            val.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532018614000/placeholder.png";
+            val.store_front_url_abs = default_image_url;
         }
         
         if (val.store_front_alt_url_abs.indexOf('missing.png') > 0) {
