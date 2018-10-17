@@ -15,6 +15,10 @@ body {
     font-weight: 400;
     font-size: 14pt;
     line-height: 28px;
+    top: auto!important;
+    .goog-te-banner-frame {
+        display:none!important;
+    }
 }
 
 .loader {
