@@ -11,12 +11,11 @@
             <h5><a href="/contact-us" data-i18n="inside_page.contact"></a></h5>
         </div>
         <div class="col-md-3">
-            <h5 class="active_heading" data-i18n="inside_page.leasing"></h5>
+            <h5><a href="/pages/marlborough-security" data-i18n="inside_page.security"></a></h5>
         </div>
         <div class="col-md-3">
-            <h5 ><a href="/jobs" data-i18n="inside_page.careers"></a></h5>
+            <h5 class="active_heading" data-i18n="inside_page.leasing"></h5>
         </div>
-        
     </div>
     <h5 class="text-center tap_here show_phone">
         <label class="accessibility" for="option_selector">Select an Option</label>
