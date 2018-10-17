@@ -21,6 +21,7 @@
 		"promos": "Promotions",
 		"contest_events": "Events",
 		"guest_services": "Guest Services",
+		"careers": "Careers",
 		"subnav": {
 			"directory": "Directory",
 	        "map": "Shopping Map",
@@ -31,8 +32,7 @@
 			"in_community": "Community/ Donations",
 			"hours": "Shopping Hours",
 			"contact_us": "Contact Us",
-		    "leasing": "Leasing",
-			"careers": "Careers"
+		    "leasing": "Leasing"
 		}
 	},
 	"home": {
