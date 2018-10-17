@@ -91,28 +91,32 @@
 					</ul>
                 </li>
                 <li>
+                    <a href="/promotions">
+                        <span data-i18n="nav.promos"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/events">
+                        <span data-i18n="nav.contest_events"></span>
+                    </a>
+                </li>
+                 <li>
                     <a href="#"  class="submenu_expander">
-                        <span data-i18n="nav.blog"></span>
+                        <span data-i18n="nav.guest_services"></span>
                         <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" alt="" style="display: inline;">
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" alt="" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/posts" data-i18n="nav.subnav.blog"></a></li>
-                        <li><a href="/events" data-i18n="nav.subnav.events"></a></li>
-                        <li><a href="/promotions" data-i18n="nav.subnav.promos"></a></li>
-                        <li><a href="/jobs" data-i18n="nav.subnav.careers"></a></li>
+                        <li><a href="/services" data-i18n="nav.subnav.services"></a></li>
+                        <li><a href="pages/lambton-gift-cards" data-i18n="nav.subnav.gift_cards"></a></li>
+                        <li><a href="/pages/lambtonmall-act-green" data-i18n="nav.subnav.act_green"></a></li>
+                        <li><a href="/pages/lambton-in-the-community" data-i18n="nav.subnav.in_community"></a></li>
 					</ul>
                 </li>
                 <li>
-                    <a href="#"  class="submenu_expander">
-                        <span data-i18n="nav.services"></span>
-                        <img class="menu_icon plus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461166990000/open_submenu.png" alt="" style="display: inline;">
-						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" alt="" style="display: none;">
+                    <a href="/posts">
+                        <span data-i18n="nav.blog"></span>
                     </a>
-                    <ul class="sub_menu hidden_now">
-                        <li><a href="/guest-services" data-i18n="nav.subnav.guest_services"></a></li>
-                        <li><a href="/gift-cards" data-i18n="nav.subnav.gift_cards"></a></li>
-					</ul>
                 </li>
                 <li>
                     <a href="#"  class="submenu_expander">
@@ -121,17 +125,11 @@
 						<img class="menu_icon minus_icon" src="//codecloud.cdn.speedyrails.net/sites/59946a1b6e6f641ba4ce0000/image/png/1461179572000/close_submenu.png" alt="" style="display: none;">
                     </a>
                     <ul class="sub_menu hidden_now">
-                        <li><a href="/contact-us" data-i18n="nav.subnav.contact"></a></li>
                         <li><a href="/hours" data-i18n="nav.subnav.hours"></a></li>
-                        <li><a href="/about-us" data-i18n="nav.subnav.about"></a></li>
-                        <li><a href="/directions-and-parking" data-i18n="nav.subnav.directions"></a></li>
+                        <li><a href="/mall-info" data-i18n="nav.subnav.mall_info"></a></li>
+                        <li><a href="/leasing" data-i18n="nav.subnav.leasing"></a></li>
+                        <li><a href="/jobs" data-i18n="nav.subnav.careers"></a></li>
 					</ul>
-                </li>
-                <li>
-                    <a href="/leasing">
-                        <span data-i18n="nav.leasing"></span>
-                    </a>
-                    
                 </li>
             </ul>
         </div>
