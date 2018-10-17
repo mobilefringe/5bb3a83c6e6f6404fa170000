@@ -539,8 +539,12 @@ function renderPosts(container, template, collection){
             val.description_short_2 = val.body_2
         }
         
-        val.description_short = val.description_short.replace("&amp;", "&");
-        val.description_short_2 = val.description_short_2.replace("&amp;", "&");
+        if(val.description_short){
+            val.description_short = val.description_short.replace("&amp;", "&");
+        }
+        if(val.description_short_2 ){
+            val.description_short_2 = val.description_short_2.replace("&amp;", "&");
+        }
         
         var published = moment(val.publish_date).tz(getPropertyTimeZone());
         var published_fr = moment(published).locale('fr');
