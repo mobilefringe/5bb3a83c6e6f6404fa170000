@@ -1,4 +1,4 @@
-var default_image_url = "//codecloud.cdn.speedyrails.net/sites/5bad55136e6f646976330000/image/png/1538496378502/LamptonMallLogoSquare.png"
+var default_image_url = "//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1539811193641/marlborough_logo square.png"
 function renderBanner(banner_template,home_banner,banners){
     var item_list = [];
     var item_rendered = [];
