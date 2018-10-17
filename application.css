@@ -1955,6 +1955,9 @@ g.mapplic-active > * {
         left: 0;
         top: 16px;
     }
+    #google_translate_element{
+        text-align:center;
+    }
     .flex-control-nav {
         padding-right: 0;
         bottom: 64px;
