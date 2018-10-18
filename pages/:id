@@ -2,7 +2,7 @@
     <h2 id="mm_page_title"></h2>
     <p data-i18n="inside_page.header_tagline"></p>
 </div>
-<div class="store_list_head main_container" id="security">
+<div class="store_list_head main_container hidden_now" id="security">
     <div class="row hidden_phone">
         <div class="col-md-3">
             <h5><a href="/hours" data-i18n="inside_page.hours"></a></h5>
