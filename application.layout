@@ -271,7 +271,7 @@
                                 <li><a href="/posts" data-i18n="nav.blog"></a></li>
                                 <li><a href="/events" data-i18n="nav.contest_events"></a></li>
                                 <li><a href="/promotions" data-i18n="nav.promos"></a></li>
-                                <li><a href="/jobs" data-i18n="nav.subnav.careers"></a></li>
+                                <li><a href="/jobs" data-i18n="nav.careers"></a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-xs-6">
