@@ -7,23 +7,24 @@
         <div class="col-md-3">
             <h5 class="active_heading" data-i18n="inside_page.guest_services"></h5>
         </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/marlborough-community-donations" data-i18n="inside_page.community"></a></h5>
+        </div>
         <div class="col-md-3">
             <h5><a href="/gift-cards" data-i18n="inside_page.gift_cards"></a></h5>
         </div>
          <div class="col-md-3">
             <h5><a href="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></a></h5>
         </div>
-         <div class="col-md-3">
-            <h5><a href="/pages/marlborough-community-donations" data-i18n="inside_page.community"></a></h5>
-        </div>
+        
     </div>
     <h5 class="text-center tap_here show_phone">
         <label class="accessibility" for="option_selector">Select an Option</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="/pages/marlborough-community-donations" data-i18n="inside_page.community"></option>
             <option value="/gift-cards" data-i18n="inside_page.gift_cards"></option>
             <option value="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></option>
-            <option value="/pages/marlborough-community-donations" data-i18n="inside_page.community"></option>
         </select>
     </h5>
 </div>
