@@ -57,14 +57,15 @@
         <div class="col-md-3">
             <h5 ><a href="/services" data-i18n="inside_page.guest_services"></a></h5>
         </div>
+        
+         <div class="col-md-3">
+            <h5 class="active_heading" data-i18n="inside_page.community"></h5>
+        </div>
         <div class="col-md-3">
             <h5><a href="/pages/marlborough-mall-walking-program" data-i18n="inside_page.mall_walkings"></a></h5>
         </div>
          <div class="col-md-3">
             <h5><a href="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></a></h5>
-        </div>
-         <div class="col-md-3">
-            <h5 class="active_heading" data-i18n="inside_page.community"></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
