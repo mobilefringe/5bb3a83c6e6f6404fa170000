@@ -109,7 +109,7 @@
             });
             
             if (published_promos.length > 0) {
-                renderEvents("#promos_container", "#promos_template", published_promos, "Lambton Mall");
+                renderEvents("#promos_container", "#promos_template", published_promos, "Marlborough Mall");
             } else {
                 $('#no_events').show()
             }
