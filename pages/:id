@@ -67,6 +67,12 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            // check if top header should be shown 
+            if(slug == 'marlborough-security'){
+                $("#security").show();
+                
+            }
+            
             show_content();
         }
         loadMallDataCached(renderAll); 
