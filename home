@@ -19,7 +19,7 @@
                     
                     <label>
                         <label style="display:none" for="agree">Subscribe</label>
-                        <input type="checkbox" class="info_check" id="agree" required/> I agree to receive newsletters from Marlborough Mall
+                        <input type="checkbox" class="info_check" id="agree" required/> I agree to receive newsletters from Lambton Mall
                     </label>
                     <br/> 
                     <button class="btn btn-success">Subscribe</button>                      
