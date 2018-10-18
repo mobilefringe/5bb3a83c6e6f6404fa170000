@@ -119,7 +119,12 @@
             // check if top header should be shown 
             if(slug == 'marlborough-security'){
                 $("#security").show();
-                
+            }
+            else if(slug == 'marlborough-act-green-initiatives'){
+                $("#act_green").show();
+            }
+            else if (slug == 'marlborough-community-donations'){
+                $("#community").show();
             }
             
             show_content();
