@@ -151,6 +151,9 @@
             else if (slug == 'marlborough-community-donations'){
                 $("#community").show();
             }
+            else if( slug == "marlborough-mall-walking-program") {
+                 $("#mall_walkings").show();
+            }
             
             show_content();
         }
