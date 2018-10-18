@@ -108,9 +108,9 @@
                     </a>
                     <ul class="sub_menu hidden_now">
                         <li><a href="/services" data-i18n="nav.subnav.services"></a></li>
-                        <li><a href="/pages/marlborough-mall-walking-program" data-i18n="nav.subnav.gift_cards"></a></li>
-                        <li><a href="/pages/marlborough-act-green-initiatives" data-i18n="nav.subnav.act_green"></a></li>
                         <li><a href="/pages/marlborough-community-donations" data-i18n="nav.subnav.in_community"></a></li>
+                        <li><a href="/pages/marlborough-mall-walking-program" data-i18n="nav.subnav.mall_walkings"></a></li>
+                        <li><a href="/pages/marlborough-act-green-initiatives" data-i18n="nav.subnav.act_green"></a></li>
 					</ul>
                 </li>
                 <li>
