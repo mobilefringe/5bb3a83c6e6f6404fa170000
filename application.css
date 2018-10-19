@@ -1908,7 +1908,7 @@ g.mapplic-active > * {
 }
 
 @media(max-width: 980px) {
-    #hours_mobile, #fb_mobile {
+    #hours_mobile, #fb_mobile, #twitter_mobile {
         position: absolute;
         top: 45%;
         left: 50%;
@@ -2546,7 +2546,7 @@ g.mapplic-active > * {
         border-radius: 0;
         border: 1px solid #d8d8d8;
     }
-    #hours_mobile, #fb_mobile {
+    #hours_mobile, #fb_mobile , #twitter_mobile{
         position: absolute;
         top: 45%;
         left: 50%;
