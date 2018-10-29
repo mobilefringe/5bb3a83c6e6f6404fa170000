@@ -206,7 +206,7 @@ function renderFeatureItems(){
     var items = [];
     var images= ["https://picsum.photos/470/940?image=1070","https://picsum.photos/470?image=1071","https://picsum.photos/470?image=1072","https://picsum.photos/470?image=1073","https://picsum.photos/470?image=1074","https://picsum.photos/470?image=1076","https://picsum.photos/470/940?image=1077"]
     
-    var urls = ["/feature1_url", "/feature2_url", "feature3_url"]
+    var urls = ["/feature1_url", "/feature2_url", "feature3_url", "feature4_url", "feature5_url", "feature6_url", "feature7_url"]
     $.each(images, function(i, val){
         var item = {};
         item.name = "placeholder";
