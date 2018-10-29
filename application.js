@@ -210,7 +210,7 @@ function renderFeatureItems(){
     $.each(images, function(i, val){
         var item = {};
         item.name = "placeholder";
-        item.url = "/";
+        item.url = urls[i]
         item.image_url = val;
         items.push(item);
     });
