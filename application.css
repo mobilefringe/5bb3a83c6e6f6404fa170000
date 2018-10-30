@@ -1593,6 +1593,22 @@ h4 {
 .feature_item .position_relative{
     width:100%;
 }
+/* *** CONTEST *** */
+#contest_form {
+    label {
+        margin-top: 5px;
+    }
+    .form-control {
+        padding: 0 12px;
+        font-size: 22px;
+    }
+    .help-block {
+        margin-top: -24px;
+        margin-bottom: 0;
+        font-size: 16px;
+    }    
+}
+
 /* BLOG */
 .blog_30 {
     height: 30px;
