@@ -43,7 +43,7 @@
                                         <input type="text" id="birthday" name="contest[birthday]" value="" class="date" style="display:none;"/>
                                     </div>
                                     <div class="col-md-4">
-                                        <select id="birthday_year" required data-validation="required" class="form-control">
+                                        <select id="birthday_year" required  class="form-control">
                                             <option value="">Year</option>
                                             <option value="2017">2017</option>
                                             <option value="2016">2016</option>
