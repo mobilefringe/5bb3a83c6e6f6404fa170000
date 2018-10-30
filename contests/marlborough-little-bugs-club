@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <select id="birthday_year" required data-validation="required" class="form-control">
-                                            <option value="">Year</option>
+                                            // <option value="">Year</option>
                                             <option value="2017">2017</option>
                                             <option value="2016">2016</option>
                                             <option value="2015">2015</option>
