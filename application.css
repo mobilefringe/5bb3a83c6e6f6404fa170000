@@ -1611,6 +1611,7 @@ h4 {
     select{
         width:100%;
         &.error{
+            color: #fff;
             option{
                 color:#fff;
                 // &:before, &:after{
