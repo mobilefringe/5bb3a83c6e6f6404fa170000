@@ -1613,9 +1613,9 @@ h4 {
         &.error{
             option{
                 color:#fff;
-                &:before, &:after{
-                     content:'';
-                }
+                // &:before, &:after{
+                //      content:'';
+                // }
                 
             }
         }
