@@ -1610,6 +1610,11 @@ h4 {
     } 
     select{
         width:100%;
+        &.error{
+            option{
+                content:''
+            }
+        }
     }
 }
 
