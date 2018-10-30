@@ -1612,13 +1612,7 @@ h4 {
         width:100%;
         &.error{
             color: #fff;
-            option{
-                color:#fff;
-                // &:before, &:after{
-                //      content:'';
-                // }
-                
-            }
+            
         }
     }
 }
