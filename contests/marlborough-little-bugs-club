@@ -74,7 +74,7 @@
                                         </select>    
                                     </div>
                                     <div class="col-md-4">
-                                        <select id="birthday_month" required data-validation="required">
+                                        <select id="birthday_month" required data-validation="required" class="form-control">
                                             <option value="">Month</option>
                                             <option value="Jan">Jan</option>
                                             <option value="Feb">Feb</option>
