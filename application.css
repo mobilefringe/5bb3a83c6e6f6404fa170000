@@ -2015,6 +2015,16 @@ g.mapplic-active > * {
         bottom: 64px;
         text-align: center;
     }
+    .home_banner {
+        .banner_text{
+            h3 {
+                font-size:30px;
+            }
+            p{
+                font-size:16px;
+            }
+        }
+    }
     .giftbalance{
         float:none;
     }
