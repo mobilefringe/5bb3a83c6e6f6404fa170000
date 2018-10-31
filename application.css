@@ -7,11 +7,11 @@ For more information on asset types please see //www.getcodecloud.com/docs#SaSS
 /* COLOURS */
 $primary: #1c9798;
 $secondary: #7b7c7e;
-
+$font_family: 'Open Sans', sans-serif;
 /* GENERAL */
 body {
     color: #424242;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     font-size: 14pt;
     line-height: 28px;
@@ -149,7 +149,7 @@ body {
     position: absolute;
     top: calc(50% - 12px);
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 700;
     font-size: 20px;
     color: #FFF;
@@ -255,7 +255,7 @@ a {
 
 
 .tooltip_name{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 0;
@@ -348,7 +348,7 @@ a {
 .latest_post{
     margin-bottom: 15px;
     position: absolute;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-size: 12px;
     color: #FFFFFF;
     letter-spacing: 0px;
@@ -382,18 +382,18 @@ a {
     font-size: 12px;
 }
 h2  {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: bolder;
     font-size: 24px;
     color: $primary;
 }
 h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     font-size: 20px;
 }
 .style-header{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
 }
 
@@ -495,6 +495,33 @@ h4 {
     position: relative;
     height: auto;
     text-align: center;
+    .banner_text{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        h3 {
+            margin:0;
+            font-size: 70px;
+            color: #FFF;
+            letter-spacing: 4px;
+            // padding-top: 140px;
+            // padding-top: 500px;
+            margin-bottom: 10px;
+            // font-weight: 300;
+            font-family:'Moments';
+            text-shadow: 1px 1px rgba(0,0,0,0.2);
+        }
+        p{
+            font-size: 24px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            margin-bottom:32px;
+            text-transform: uppercase;
+            font-family:$font_family;
+            text-shadow: 1px 1px rgba(0,0,0,0.2);
+        }
+    }
 }
 .hero_banner{
     background-color:#000;
@@ -554,7 +581,7 @@ h4 {
         padding-top: 60px;
         max-width: 940px;
         text-transform:uppercase;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 400;
         font-size: 52px;
         letter-spacing: 4px;
@@ -564,7 +591,7 @@ h4 {
         font-size: 24px;
         color: #fff;
         letter-spacing: 0.5px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
     }
 }
@@ -582,7 +609,7 @@ h4 {
         padding-top: 60px;
         margin-bottom: 10px;
         text-transform:uppercase;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 400;
         max-width: 940px;
         margin-left: auto;
@@ -592,7 +619,7 @@ h4 {
         font-size: 24px;
         color: #fff;
         letter-spacing: 0.5px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
     }
 }
@@ -609,7 +636,7 @@ h4 {
     margin-bottom: 20px;
     padding: 0 40px;
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     h5, a {
         margin: 0;
         padding: 27px 0px;
@@ -655,7 +682,7 @@ h4 {
         color: white;
         letter-spacing: 0.5px;
         margin-bottom:32px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
     }
     a{
@@ -693,7 +720,7 @@ h4 {
         padding-top: 60px;
         margin-bottom: 10px;
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 400;
         max-width: 940px;
         margin-left: auto;
@@ -703,7 +730,7 @@ h4 {
         font-size: 24px;
         color: #fff;
         letter-spacing: 0.5px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
     }
 }
@@ -721,14 +748,14 @@ h4 {
         color: #fff;
         letter-spacing: 4px;
         margin-bottom: 10px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 400;
     }
     p{
         font-size: 24px;
         color: #fff;
         letter-spacing: 0.5px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
     }
 }
@@ -880,7 +907,7 @@ h4 {
         float: left;
         .insta {
             margin: 30px 0;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $font_family;
             font-weight: 800;
             font-size: 20px;
             color: #FFFFFF;
@@ -947,7 +974,7 @@ h4 {
     margin-top:0;
     font-size: 24px;
     color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -1169,7 +1196,7 @@ h4 {
     display:none;
 }
 #close_menu{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     display: inline-block;
     padding: 0 20px;
@@ -1181,7 +1208,7 @@ h4 {
     position: relative;
     top: 70px;
     h5 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 800;
         font-size: 20px;
         color: #FFFFFF;
@@ -1197,7 +1224,7 @@ h4 {
 .hours_heading{
     margin-top: 5px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: bolder;
     font-style: normal;
     font-size: 24px;
@@ -1386,7 +1413,7 @@ h4 {
 .promo_list_name {
     margin-top: 5px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: bolder;
     font-style: normal;
     font-size: 24px;
@@ -1562,7 +1589,7 @@ h4 {
 
 .holiday_hours_home{
     margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 300;
     font-size: 14px;
     color: $primary;
@@ -1625,7 +1652,7 @@ h4 {
     margin-bottom: 80px;
 }
 .previous_title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     font-size: 24px;
     color: $secondary;
@@ -1674,7 +1701,7 @@ h4 {
     float: right;
 }
 .main_post_header, .post_header {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -1735,7 +1762,7 @@ h4 {
     display: block;
 }
 .post_details_title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font_family;
     font-weight: bold;
     font-size: 24px;
     color: $secondary;
@@ -1844,7 +1871,7 @@ gallery:after{
 #modal_name {
     margin-top: 0;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: $font_family; 
     font-weight: 700;
     font-size: 28px;
     color: $secondary;
@@ -2296,7 +2323,7 @@ g.mapplic-active > * {
     }
     
     .newsletter_desc{
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
         margin:0;
         font-size:16px;
@@ -2667,7 +2694,7 @@ g.mapplic-active > * {
     .newsletter_desc{
         margin:0;
         font-size:16px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         text-transform: uppercase;
         span{
             margin:0 5px;
@@ -2750,7 +2777,7 @@ g.mapplic-active > * {
         column-gap: 75px;
     }
     .category_header{
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font_family;
         font-weight: 400;
         color: $primary;
         font-size: 20px;
