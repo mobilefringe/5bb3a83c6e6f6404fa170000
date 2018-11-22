@@ -204,10 +204,10 @@ function renderEventDetails(container, template, collection, mall_name){
 function renderFeatureItems(){
     // var items = getFeatureList();
     var items = [];
-    var images= ["https://picsum.photos/470/940?image=1070","https://picsum.photos/470?image=1071","https://picsum.photos/470?image=1072","https://picsum.photos/470?image=1073","https://picsum.photos/470?image=1074","https://picsum.photos/470?image=1076","https://picsum.photos/470/940?image=1077"]
+    var images= ["//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902131000/Promotions 470 x 940.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902133000/Shops-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902132000/Contact Us 470 x 470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902133000/Bags-600-x-600.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902130000/Act-Green-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902130000/Kids-Fun-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902131000/Events-470-x-940.jpg"]
     
-    var urls = ["/feature1_url", "/feature2_url", "feature3_url", "feature4_url", "feature5_url", "feature6_url", "feature7_url"];
-    var names = ["feature1", "feature", "featurel", "feature4", "feature5", "feature6", "feature7"];
+    var urls = ["/promotions", "/stores", "/contact-us", "Blog", "Act Green", "feature6_url", "/events"];
+    var names = ["Promotions", "Shops", "/posts", "/pages/marlborough-little-bugs-club", "/pages/marlborough-act-green-initiatives", "", "Events"];
     $.each(images, function(i, val){
         var item = {};
         item.name = names[i];
