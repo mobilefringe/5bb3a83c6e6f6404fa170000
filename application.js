@@ -556,7 +556,9 @@ function renderPosts(container, template, collection){
         if(Cookies.get('current_locale') == "fr-CA"){
             val.published_on = published_fr.format('ll');
         }
-
+        val.counter = counter;
+        
+        counter = counter + 1;
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
