@@ -130,13 +130,13 @@
                     <span class="hidden-sm hidden-xs">
                         <div class="feature_insta_conatiner">
                             <a href="https://www.facebook.com/MarlboroughMall" target="_blank">
-                                <h5 id="insta_mobile" class="insta">LIKE US ON FACEBOOK</h5>
+                                <h5 id="fb_mobile" class="insta">LIKE US ON FACEBOOK</h5>
                             </a>        
                         </div>
                     </span>
                     <span class="visible-sm-block visible-xs-block">
                         <a href="https://www.facebook.com/MarlboroughMall" target="_blank">
-                            <h5 id="insta_mobile" class="insta">LIKE US ON FACEBOOK</h5>
+                            <h5 id="fb_mobile" class="insta">LIKE US ON FACEBOOK</h5>
                         </a>     
                     </span>
                 </div>
