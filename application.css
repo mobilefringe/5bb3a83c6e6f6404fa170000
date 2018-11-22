@@ -2128,6 +2128,10 @@ g.mapplic-active > * {
             font-size: 30px;
         }
     }
+    .inside_banner h2{
+        font-size: 42px;
+        padding-top: 26px;
+    }
     .tap_here{
        margin-left:15px !important;
        margin-right:15px !important;
