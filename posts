@@ -100,12 +100,12 @@
 		loadMallDataCached(renderAll);
 		function load_more_1(num){
             var n = parseInt(num);
-            for(i = n; i < n + 20; i++){
+            for(i = n; i < n + 10; i++){
                 var id = i.toString();
                 $('#latest_show_' + id ).fadeIn();
             }
             var blog_posts = getBlogDataBySlug("marlborough-main").posts.sortBy(function(o){ return o.publish_date}).reverse();
-            var posts = blog_posts.splice(20);
+            var posts = blog_posts.splice(10);
             var total_posts = posts.length;
             if(i >= total_posts){
                 $('#loaded_posts_1').hide();
