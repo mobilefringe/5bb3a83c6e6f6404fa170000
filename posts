@@ -81,10 +81,17 @@
             var blog = getBlogDataBySlug("marlborough-main").posts
             var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
             renderPosts('#post_container', '#post_template', posts);
-            load_more_1(3);
+            
+            //load the first 10 blog posts first
+            for(i = 0; i < 10; i++){
+                var id = i.toString();
+                console.log("id", id)
+                $('#latest_show_' + id ).fadeIn();
+            }
+            
             $('#load_more_posts_1').click(function(e){
                 var i = $('#num_loaded_1').val();
-                load_more_1(1);
+                load_more_1(i);
                 e.preventDefault();
             });
             show_content();
