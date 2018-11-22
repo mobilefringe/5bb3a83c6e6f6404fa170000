@@ -302,7 +302,7 @@ a {
 .social_box{
     padding:22px 30px;
     // background: $primary;
-    background: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1532451835000/02 fb.png'), center center no-repeat;
+    background: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1541014313000/fb2x.png'), center center no-repeat;
     background-size: contain;
     height: 235px;
     width: 235px;
@@ -319,14 +319,14 @@ a {
     }
 }
 .twitter_box {
-    background-image: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1538496369905/twittericon-twtblue.jpg');
+    background-image: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1541014313000/twit2x.png');
 }
 
 .hours_box{
     height:235px;
     width:235px;
     display:block;
-    background: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1539967936965/hoursicon_transparent.png'), center center no-repeat;
+    background: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1541014313000/hours2x.png'), center center no-repeat;
      background-color: $primary;
     background-size: contain;
     position: relative;
