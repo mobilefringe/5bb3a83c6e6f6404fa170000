@@ -2029,6 +2029,9 @@ g.mapplic-active > * {
         left: 0;
         top: 16px;
     }
+    #desktopHeader{
+        display:none;
+    }
     #google_translate_element{
         text-align:center;
     }
