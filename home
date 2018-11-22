@@ -99,7 +99,7 @@
                     </span>
                     <span class="visible-sm-block visible-xs-block">
                         <a href="https://twitter.com/MarlboroughMall" target="_blank">
-                            <h5 id="twitter_mobile" class="insta">FOLLOW US<br>@MarlboroughMall</h5>
+                            <h5 id="twitter_mobile" class="insta">FOLLOW US<br><span>@MarlboroughMall</span></h5>
                         </a> 
                     </span>
                     
