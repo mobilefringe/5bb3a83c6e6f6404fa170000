@@ -100,7 +100,6 @@
 		loadMallDataCached(renderAll);
 		function load_more_1(num){
             var n = parseInt(num);
-            console.log("n", n);
             for(i = n; i < n + 3; i++){
                 var id = i.toString();
                 $('#latest_show_' + id ).fadeIn();
