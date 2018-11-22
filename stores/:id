@@ -207,7 +207,6 @@
                 
                 $(".store_anchors").click(function(e){
                     var href = $(this).attr("href");
-                    
                     var position = $(href).offset().top - 125;
                       $("html, body").animate( //$("html, body").animate(
                         {
