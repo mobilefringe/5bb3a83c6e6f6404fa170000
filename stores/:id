@@ -210,7 +210,6 @@
                     var href = $(this).attr("href");
                     
                     var position = $(href).offset().top - 125;
-                        console.log("position", position)
                       $("html, body").animate( //$("html, body").animate(
                         {
                           scrollTop: position
