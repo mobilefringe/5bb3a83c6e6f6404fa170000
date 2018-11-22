@@ -2279,7 +2279,16 @@ g.mapplic-active > * {
     #promos_main .promo_item{
         text-align:left;
     }
-    
+    .promo_dates {
+        margin-bottom: 0;
+    }
+    .read_more {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        width: auto;
+        color: #fff;
+    }
     #map2{
         height:360px;
         border: 1px solid #979797;
