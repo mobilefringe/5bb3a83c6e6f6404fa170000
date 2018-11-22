@@ -89,6 +89,21 @@
             });
             show_content();
         }
-		loadMallDataCached(renderAll); 
+		loadMallDataCached(renderAll);
+		function load_more_1(num){
+            var n = parseInt(num);
+            for(i = n; i < n + 3; i++){
+                var id = i.toString();
+                $('#latest_show_' + id ).fadeIn();
+            }
+            var blog_posts = getBlogDataBySlug('cornwall-queen-city').posts.sortBy(function(o){ return o.publish_date}).reverse();
+            var posts = blog_posts.splice(3);
+            var total_posts = posts.length;
+            if(i >= total_posts){
+                $('#loaded_posts_1').hide();
+                $('#all_loaded_1').show();
+            }
+            $('#num_loaded_1').val(i);
+        }
     })
 </script>
