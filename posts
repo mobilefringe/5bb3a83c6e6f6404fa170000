@@ -11,7 +11,7 @@
                 <div id="post_container">
                     <script id="post_template" type="x-tmpl-mustache/text">
                         <div class="primary-locale">
-                            <div class="row promo_item">
+                            <div class="row promo_item hidden_now"  id="latest_show_{{counter}}">
                                 <div class="col-md-3">
                                     <div class="cropped_image">
                                         <img src="{{image_url}}" alt="{{title}}" />
