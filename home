@@ -110,20 +110,34 @@
             
             <div class="feature_item">
                 <div id="feature_4" class="position_relative"></div>
-                <div class="social_box text-center" id="social_fb">
-                   <span class="hidden-sm hidden-xs">
-                        <a href="#" id="latest_fb_link" target="_blank">
-                            <p id="latest_fb" class="latest_post"></p>
-                        </a>
-                        <p id="latest_fb_date" class="latest_post"></p>
-                        <p id="fb_link">
-                            <a  class="social_link_blank" href="https://www.facebook.com/MarlboroughMall" target="_blank">Facebook/MarlboroughMall</a>
-                        </p>
+                <!--<div class="social_box text-center" id="social_fb">-->
+                <!--   <span class="hidden-sm hidden-xs">-->
+                <!--        <a href="#" id="latest_fb_link" target="_blank">-->
+                <!--            <p id="latest_fb" class="latest_post"></p>-->
+                <!--        </a>-->
+                <!--        <p id="latest_fb_date" class="latest_post"></p>-->
+                <!--        <p id="fb_link">-->
+                <!--            <a  class="social_link_blank" href="https://www.facebook.com/MarlboroughMall" target="_blank">Facebook/MarlboroughMall</a>-->
+                <!--        </p>-->
+                <!--    </span>-->
+                <!--    <span class="visible-sm-block visible-xs-block">-->
+                <!--        <a href="https://www.facebook.com/MarlboroughMall" target="_blank">-->
+                <!--            <h5 id="fb_mobile" class="insta">LIKE US ON FACEBOOK</h5>-->
+                <!--        </a>        -->
+                <!--    </span>-->
+                <!--</div>-->
+                <div class="social_box insta_box text-center" id="insta_box">
+                    <span class="hidden-sm hidden-xs">
+                        <div class="feature_insta_conatiner">
+                            <a href="https://www.instagram.com/westbrookmall" target="_blank">
+                                <h5 id="insta_mobile" class="insta">FOLLOW US<br>@WestbrookMall</h5>
+                            </a>        
+                        </div>
                     </span>
                     <span class="visible-sm-block visible-xs-block">
-                        <a href="https://www.facebook.com/MarlboroughMall" target="_blank">
-                            <h5 id="fb_mobile" class="insta">LIKE US ON FACEBOOK</h5>
-                        </a>        
+                        <a href="https://www.instagram.com/westbrookmall" target="_blank">
+                            <h5 id="insta_mobile" class="insta">FOLLOW US<br>@WestbrookMall</h5>
+                        </a>     
                     </span>
                 </div>
                 <div id="feature_5" class="position_relative"></div>
