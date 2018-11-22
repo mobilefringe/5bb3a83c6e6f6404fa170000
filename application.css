@@ -2910,9 +2910,9 @@ g.mapplic-active > * {
     .hours_link, #latest_fb, #latest_fb_date {
         display: none;
     }
-    .hours_today {
-        display: block;
-    }
+    // .hours_today {
+    //     display: block;
+    // }
     .store_logo {
         display: none;
     }
