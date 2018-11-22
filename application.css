@@ -303,6 +303,7 @@ a {
     padding:22px 30px;
     // background: $primary;
     background: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1541014313000/fb2x.png'), center center no-repeat;
+    background-color: $primary;
     background-size: contain;
     height: 235px;
     width: 235px;
@@ -320,6 +321,7 @@ a {
 }
 .twitter_box {
     background-image: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/png/1541014313000/twit2x.png');
+    background-color: $primary;
 }
 
 .hours_box{
