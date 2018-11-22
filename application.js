@@ -558,9 +558,9 @@ function renderPosts(container, template, collection){
         }
         val.counter = counter;
         
-        counter = counter + 1;
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
+        counter = counter + 1;
     });
     
     $(container).show();
