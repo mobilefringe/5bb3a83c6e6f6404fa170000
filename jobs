@@ -37,7 +37,7 @@
                         <div class="primary-locale">
                             <div class="row promo_item">
                                 <div class="col-md-3">
-                                    <div class="cropped_image ">
+                                    <div class="cropped_image hidden_phone">
                                         <img src="{{img_url}}" alt="{{store_name}} Logo" />
                                     </div>
                                 </div>
