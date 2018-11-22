@@ -85,7 +85,6 @@
             //load the first 10 blog posts first
             for(i = 0; i < 10; i++){
                 var id = i.toString();
-                console.log("id", id)
                 $('#latest_show_' + id ).fadeIn();
             }
             //set the loaded number to 10
