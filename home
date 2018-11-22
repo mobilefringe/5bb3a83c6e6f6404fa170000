@@ -129,13 +129,13 @@
                 <div class="social_box insta_box text-center" id="insta_box">
                     <span class="hidden-sm hidden-xs">
                         <div class="feature_insta_conatiner">
-                            <a href="https://www.instagram.com/MarlboroughMall" target="_blank">
+                            <a href="https://www.facebook.com/MarlboroughMall" target="_blank">
                                 <h5 id="insta_mobile" class="insta">LIKE US ON<br>@MarlboroughMall</h5>
                             </a>        
                         </div>
                     </span>
                     <span class="visible-sm-block visible-xs-block">
-                        <a href="https://www.instagram.com/MarlboroughMall" target="_blank">
+                        <a href="https://www.facebook.com/MarlboroughMall" target="_blank">
                             <h5 id="insta_mobile" class="insta">LIKE US ON<br>@MarlboroughMall</h5>
                         </a>     
                     </span>
