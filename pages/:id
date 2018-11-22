@@ -47,7 +47,7 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
             <option value="/services" data-i18n="inside_page.guest_services"></option>
-            <option value="/gift-cards" data-i18n="inside_page.community"></option>
+            <option value="/pages/marlborough-community-donations" data-i18n="inside_page.community"></option>
             <option value="/pages/marlborough-mall-walking-program" data-i18n="inside_page.mall_walkings"></option>
         </select>
     </h5>
