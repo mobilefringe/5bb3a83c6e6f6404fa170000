@@ -930,7 +930,7 @@ h4 {
     }
 }
 
- .feature_item figure {
+.feature_item figure {
     height: 300px;
     position: relative;
     overflow: hidden;
