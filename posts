@@ -88,6 +88,8 @@
                 console.log("id", id)
                 $('#latest_show_' + id ).fadeIn();
             }
+            //set the loaded number to 10
+            $('#num_loaded_1').val(10);
             
             $('#load_more_posts_1').click(function(e){
                 var i = $('#num_loaded_1').val();
