@@ -206,7 +206,6 @@
                 }
                 
                 $(".store_anchors").click(function(e){
-                    console.log("clicked! anchor_btn", $(this).attr("href"));
                     var href = $(this).attr("href");
                     
                     var position = $(href).offset().top - 125;
