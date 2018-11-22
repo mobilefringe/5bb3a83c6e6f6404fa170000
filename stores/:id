@@ -205,6 +205,21 @@
                     $('#job_anchor').hide()
                 }
                 
+                $(".store_anchors").click(function(e){
+                    console.log("clicked! anchor_btn", $(this).attr("href"));
+                    var href = $(this).attr("href");
+                    
+                    var position = $(href).offset().top - 100;
+                        console.log("position", position)
+                      $("html, body").animate( //$("html, body").animate(
+                        {
+                          scrollTop: position
+                        },
+                        500,
+                        "linear"
+                      );
+                    
+                });
                 // show_content();
                 
                 //MAP  
