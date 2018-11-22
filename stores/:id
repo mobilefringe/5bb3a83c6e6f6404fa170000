@@ -209,7 +209,7 @@
                     console.log("clicked! anchor_btn", $(this).attr("href"));
                     var href = $(this).attr("href");
                     
-                    var position = $(href).offset().top - 100;
+                    var position = $(href).offset().top - 150;
                         console.log("position", position)
                       $("html, body").animate( //$("html, body").animate(
                         {
