@@ -101,7 +101,17 @@ body {
     transform: rotate(360deg);
   }
 }
-
+#google_translate_element{
+    
+    .goog-te-gadget-simple {
+        height:26px;
+    }
+}
+#desktopHeader {
+    position: absolute;
+    right: 80px;
+    top: 25px;
+}
 .accessibility {
     display: none;
 }
