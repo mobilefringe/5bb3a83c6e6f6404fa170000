@@ -2052,7 +2052,7 @@ g.mapplic-active > * {
     .hours_today{   
         display: inline-block;
         color: #424242;
-        font-size: 14pt;
+        font-size: 12pt;
         font-family: "Open Sans",sans-serif;
         font-weight: 400;
     }
