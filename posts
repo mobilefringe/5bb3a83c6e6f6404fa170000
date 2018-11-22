@@ -53,14 +53,14 @@
                     </script>
                 </div>    
                 <div class="row load_more">
-                <input type="hidden" value="1" id="num_loaded_1" />
-                <p class="hidden_now" id ="all_loaded_1">No More Posts</p>
-                <a href="#" class="red" id="load_more_posts_1">
-                    <p class="loaded_posts" id="loaded_posts_1">
-                        <span class="post_details_link">More +</span>
-                    </p>
-                </a>
-            </div>
+                    <input type="hidden" value="1" id="num_loaded_1" />
+                    <p class="hidden_now" id ="all_loaded_1">No More Posts</p>
+                    <a href="#" class="red" id="load_more_posts_1">
+                        <p class="loaded_posts" id="loaded_posts_1">
+                            <span class="post_details_link">More +</span>
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
