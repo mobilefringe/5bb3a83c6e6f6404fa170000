@@ -1072,7 +1072,16 @@ h4 {
     //     }
     // }
 }
-
+.site_map {
+    p{
+        font-size:10pt;
+    }
+    .footer_site_map{
+        ul a{
+            font-size:10pt;
+        }
+    }
+}
 .site_map_heading{
     font-weight: bold;
     font-size: 14px;
