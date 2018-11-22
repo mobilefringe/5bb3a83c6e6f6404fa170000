@@ -21,7 +21,7 @@
     <h5 class="text-center tap_here show_phone">
         <label class="accessibility" for="option_selector">Select an Option</label>
         <select id="option_selector" class="link_selector">
-            <option value="" disabled selected data-i18n="inside_page.mobile_menu"></option>
+            <option value="" disabled selected data-i18n="inside_page.contact"></option>
             <option value="/contact-us" data-i18n="inside_page.mall_info"></option>
             <option value="/pages/marlborough-security" data-i18n="inside_page.security"></option>
             <option value="/leasing" data-i18n="inside_page.leasing"></option>
