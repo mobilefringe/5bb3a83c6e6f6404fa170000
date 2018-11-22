@@ -2056,6 +2056,9 @@ g.mapplic-active > * {
         font-family: "Open Sans",sans-serif;
         font-weight: 400;
     }
+    .hours_home{
+        font-size: 12pt;
+    }
     .home_banner {
         .banner_text{
             h3 {
