@@ -95,6 +95,7 @@
             console.log("n", n);
             for(i = n; i < n + 3; i++){
                 var id = i.toString();
+                console.log("id", id)
                 $('#latest_show_' + id ).fadeIn();
             }
             var blog_posts = getBlogDataBySlug("marlborough-main").posts.sortBy(function(o){ return o.publish_date}).reverse();
