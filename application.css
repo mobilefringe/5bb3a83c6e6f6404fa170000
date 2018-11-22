@@ -103,9 +103,9 @@ body {
 }
 #google_translate_element{
     
-    .goog-te-gadget-simple {
-        height:26px;
-    }
+    // .goog-te-gadget-simple {
+    //     height:26px;
+    // }
 }
 #desktopHeader {
     position: absolute;
