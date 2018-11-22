@@ -929,6 +929,13 @@ h4 {
         -webkit-transition: 500ms;
     }
 }
+.feature_insta_conatiner {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .feature_item figure {
     height: 300px;
