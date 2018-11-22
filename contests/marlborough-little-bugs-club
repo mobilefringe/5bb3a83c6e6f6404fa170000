@@ -1,6 +1,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <div class="main_banner text-center">
-    <h3>Little Bugs Club</h3>
+    <h2>Little Bugs Club</h2>
     <p>explore • enjoy • shop</p>
 </div>
 <div class="margin_20"></div>
