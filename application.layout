@@ -184,14 +184,14 @@
                     <script type="text/javascript">
                         function googleTranslateElementInit() {
                           new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,zh-CN,zh-TW,es,tl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-40014802-40'}, 'google_translate_element');
-                        }
-                        setTimeout(function(){
-                                if ($( window ).width() < 768){
-                                    m = true;
-                                    $('#g_translater').detach().appendTo('#google_translate_element_m');                            
-                                }
-                            }, 1500);
-                        }
+                        
+                            setTimeout(function(){
+                                    if ($( window ).width() < 768){
+                                        m = true;
+                                        $('#g_translater').detach().appendTo('#google_translate_element_m');                            
+                                    }
+                                }, 1500);
+                            }
                         $( window ).resize(function() {
                             if ($( window ).width() < 768 && m == false){
                                 m = true;
