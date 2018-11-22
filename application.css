@@ -2789,12 +2789,12 @@ g.mapplic-active > * {
         margin-bottom: 0;
     }
     .read_more {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    width: auto;
-    color: #fff;
-}
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        width: auto;
+        color: #fff;
+    }
 
     .home_promotions{
         
