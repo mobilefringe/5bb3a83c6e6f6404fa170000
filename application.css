@@ -2049,6 +2049,13 @@ g.mapplic-active > * {
         bottom: 64px;
         text-align: center;
     }
+    .hours_today{   
+        display: inline-block;
+        color: #424242;
+        font-size: 14pt;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+    }
     .home_banner {
         .banner_text{
             h3 {
