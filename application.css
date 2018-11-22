@@ -2328,7 +2328,7 @@ g.mapplic-active > * {
     }
     .open_menu{
         width:33px;
-        margin-top:22px;
+        margin-top:30px;
     }
     
     .header{
@@ -2647,7 +2647,7 @@ g.mapplic-active > * {
 @media (min-width: 769px) {
     .open_menu{
         width:33px;
-        margin-top:45px;
+        margin-top:22px;
         cursor: pointer;
     }
     .search_results_container{
