@@ -43,14 +43,6 @@
                 </li>
             </script>
         </ul>
-        <!--<ul class="slides" id="home_banner">-->
-        <!--    <li class="position_relative">-->
-        <!--        <a href="/stores" {{css}}>-->
-        <!--            <div class="hero_banner" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902133000/MBM-Winter2019-blue.jpg')"></div>-->
-        <!--        </a>-->
-        <!--    </li>-->
-            
-        <!--</ul>-->
     </div>
     <div class="banner_text" id="welcome_msg_container">
         <script id="welcome_msg_template" type="x-tmpl-mustache/text">
