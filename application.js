@@ -202,19 +202,8 @@ function renderEventDetails(container, template, collection, mall_name){
 }
 
 function renderFeatureItems(){
-    // var items = getFeatureList();
-    // var items = [];
-    // var images= ["//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902131000/Promotions 470 x 940.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902133000/Shops-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902132000/Contact Us 470 x 470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902133000/Bags-600-x-600.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902130000/Act-Green-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902130000/Kids-Fun-470-x-470.jpg","//codecloud.cdn.speedyrails.net/sites/5bb3a83c6e6f6404fa170000/image/jpeg/1542902131000/Events-470-x-940.jpg"]
-    
-    // var urls = ["/promotions", "/stores", "/contact-us", "/posts", "/pages/marlborough-act-green-initiatives", "/pages/marlborough-little-bugs-club", "/events"];
-    // var names = ["Promotions", "Shops", "Contact Us", "Blog", "Act Green", "", "Events"];
-    // $.each(images, function(i, val){
-    //     var item = {};
-    //     item.name = names[i];
-    //     item.url = urls[i]
-    //     item.image_url = val;
-    //     items.push(item);
-    // });
+    var items = getFeatureList();
+   
     $.each(items, function(i, val){
         if(Cookies.get('current_locale') == "en-CA"){
             $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url+'" class="hoverer" alt="' +val.name+ '"><h5 class="center_h">'+ val.name +'</h5></a>')
