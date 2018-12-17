@@ -1971,6 +1971,7 @@ g.mapplic-active > * {
 }
 .mapplic-tooltip-title {
     color: #424242;
+    line-height: normal;
 }
 .mapplic-tooltip-content {
     overflow: hidden;
