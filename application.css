@@ -2314,6 +2314,7 @@ g.mapplic-active > * {
     }
     .promo_item{
         text-align:center;
+        border-bottom: 1px solid #ccc;
         img{
             width:180px;   
             margin-bottom:10px;
