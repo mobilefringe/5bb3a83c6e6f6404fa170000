@@ -2087,6 +2087,29 @@ g.mapplic-active > * {
     .store_list_head h5, .store_list_head a{
         font-size: 20px;
     }
+    /**** mobile category select ****/ 
+    .store_category_selector {
+        margin-bottom: 20px;
+        margin-top: -20px;
+       h5, a{
+            font-size:20px;
+            color: #D8836C;
+            letter-spacing: 1.5px;
+            padding: 27px 0px;
+            margin: 0;
+            text-transform:uppercase;
+       }
+    }
+    #category_selector_container{
+        max-height: 300px;
+        overflow-y: scroll;
+        display:none;
+    }
+    .padded_border{
+        border-top: 1px solid #979797;
+        margin-top: 20px;
+        display:none;
+    }
     .hours_link {
         left: calc(50%);
         transform: translate(-50%);
