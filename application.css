@@ -2862,6 +2862,14 @@ g.mapplic-active > * {
         -moz-column-gap: 75px;
         column-gap: 75px;
     }
+    /*** mobile category *****/ 
+    #category_selector_container{
+        display:none!important;
+    }
+    .padded_border{
+        display:none!important;
+    }
+    
     .category_header{
         font-family: $font_family;
         font-weight: 400;
