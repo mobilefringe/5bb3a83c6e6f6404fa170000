@@ -2093,7 +2093,7 @@ g.mapplic-active > * {
         margin-top: -20px;
        h5, a{
             font-size:20px;
-            color: #D8836C;
+            color: $primary;
             letter-spacing: 1.5px;
             padding: 27px 0px;
             margin: 0;
