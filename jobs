@@ -1,5 +1,5 @@
 <div class="main_banner text-center">
-    <h2 data-i18n="jobs.title"></h2>
+    <h2>Careers</h2>
     <p></p>
 </div>
 <div class="margin_20"></div>
@@ -15,7 +15,6 @@
                                     <img src="{{img_url}}" alt="{{store_name}} Logo" />
                                 </div>
                             </div>
-                            <div class="col-md-9">
                                 <h2 class="promo_list_name">{{name}}</h2>
                                 <p>
                                     <a href="/stores/{{store_slug}}" style="{{store_show}}"><span class="underline promo_store">{{store_name}}</span></a>
