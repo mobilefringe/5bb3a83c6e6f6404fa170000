@@ -1,6 +1,6 @@
 <div class="main_banner text-center">
-    <h2 data-i18n="inside_page.gift_cards"></h2>
-    <p data-i18n="inside_page.header_tagline"></p>
+    <h2>Gift Cards</h2>
+    <p></p>
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
@@ -8,7 +8,7 @@
             <h5 ><a href="/services">Services</a></h5>
         </div>
         <div class="col-md-3">
-            <h5  class="active_heading" data-i18n="inside_page.gift_cards"></h5>
+            <h5  class="active_heading">Gift Cards</h5>
         </div>
          <div class="col-md-3">
             <h5><a href="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></a></h5>
