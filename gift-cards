@@ -5,16 +5,16 @@
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-3">
-            <h5 ><a href="/services">Services</a></h5>
+            <h5><a href="/services">Services</a></h5>
         </div>
         <div class="col-md-3">
-            <h5  class="active_heading">Gift Cards</h5>
+            <h5 class="active_heading">Gift Cards</h5>
         </div>
          <div class="col-md-3">
-            <h5><a href="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></a></h5>
+            <h5><a href="/pages/marlborough-act-green-initiatives">ACT Green</a></h5>
         </div>
-         <div class="col-md-3">
-            <h5><a href="/pages/marlborough-community-donations" data-i18n="inside_page.community"></a></h5>
+        <div class="col-md-3">
+            <h5><a href="/pages/marlborough-community-donations">Community</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -22,8 +22,8 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>Tap For More Options</option>
             <option value="/services" data-="inside_page.services">Services</option>
-            <option value="/pages/marlborough-act-green-initiatives" data-i18n="inside_page.act_green"></option>
-            <option value="/pages/marlborough-community-donations" data-i18n="inside_page.community"></option>
+            <option value="/pages/marlborough-act-green-initiatives">ACT Green</option>
+            <option value="/pages/marlborough-community-donations">Community</option>
         </select>
     </h5>
 </div>
@@ -52,12 +52,7 @@
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/marlborough-gift-cards.json"
             $.getJSON(pages_json).done(function(data) {
-                if(Cookies.get('current_locale') == "en-CA"){
-                    $('#mm_page_content').html(data.body);
-                }
-                if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#mm_page_content').html(data.body_2);
-                }
+                $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
