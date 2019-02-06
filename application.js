@@ -427,7 +427,7 @@ function renderPromotions(container, template, collection, mall_name){
             val.store_show = "display: inline-block";
             val.mall_show = "display: none";
 
-            // English Image
+            // Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
                     val.promo_image_url_abs = default_image_url;
@@ -435,19 +435,7 @@ function renderPromotions(container, template, collection, mall_name){
                     val.promo_image_url_abs = store_details.store_front_url_abs;
                 }
             }
-            // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
-                if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    if (store_details.store_front_url_abs.indexOf('missing.png') > 0) {
-                        val.promo_image_url_abs = default_image_url;
-                    } else {
-                        val.promo_image_url_abs = store_details.store_front_url_abs;
-                    }
-                } else {
-                    val.promo_image2_url_abs = val.promo_image_url_abs;
-                }
-            }
-        
+            
             val.store_slug = "/stores/" + store_details.slug
         } else {
             val.store_name = mall_name;
@@ -455,52 +443,27 @@ function renderPromotions(container, template, collection, mall_name){
             val.store_show = "display:none;";
             val.mall_show = "display: inline-block";
             
-            // English Image
+            // Image
             if (val.promo_image_url_abs.indexOf('missing.png') > -1){
                 val.promo_image_url_abs = default_image_url;
             }
-            // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > -1){
-                if (val.promo_image_url_abs.indexOf('missing.png') > -1){
-                    val.promo_image2_url_abs = default_image_url;
-                } else {
-                    val.promo_image2_url_abs = val.promo_image_url_abs;
-                }
-            }
         }
         
-        // English Description
+        // Description
         if (val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
         } else {
             val.description_short = val.description
         }
-        // French Description
-        if (val.description_2 && val.description_2.length > 200){
-            val.description_short_2 = val.description_2.substring(0,200) + "...";
-        } else {
-            val.description_short_2 = val.description_2
-        }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
-        var french_start = moment(start).locale('fr-ca');
-        var french_end = moment(end).locale('fr-ca');
+  
         if (start.format("DMY") == end.format("DMY")){
-            if(Cookies.get('current_locale') == "en-CA"){
-                val.dates = start.format("MMM D");
-            }
-            if(Cookies.get('current_locale') == "fr-CA"){
-                val.dates = french_start.format("DD MMM");
-            }
+            val.dates = start.format("MMM D");
         } else {
-            if(Cookies.get('current_locale') == "en-CA"){
-                val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-            }
-            if(Cookies.get('current_locale') == "fr-CA"){
-                val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
-            }
+            val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
         
         var rendered = Mustache.render(template_html,val);
@@ -542,21 +505,11 @@ function renderPromoDetails(container, template, collection, mall_name){
                 val.phone_show = "display:none";
             }
             
-            // English Image
+            // Image
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.show_img = "display: none"
             } else {
                 val.image_url = val.promo_image_url_abs;
-            }
-            // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
-                if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-                    val.show_img = "display: none"
-                } else {
-                    val.image_url = val.promo_image_url_abs;
-                }
-            } else {
-                val.image_url = val.promo_image2_url_abs;
             }
         } else {
             val.store_name = mall_name;
@@ -565,43 +518,22 @@ function renderPromoDetails(container, template, collection, mall_name){
             val.phone_show = "display:none";
             val.show = "display:none";
             
-            // English Image
+            // Image
             if (val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.show_img = "display: none"
             } else {
                 val.image_url = val.promo_image_url_abs;
-            }
-            // French Image
-            if (val.promo_image2_url_abs.indexOf('missing.png') > 0){
-                if (val.promo_image_url_abs.indexOf('missing.png') > 0){
-                    val.show_img = "display: none"
-                } else {
-                    val.image_url = val.promo_image_url_abs;
-                }
-            } else {
-                val.image_url = val.promo_image2_url_abs;
             }
         }
 
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
-        var french_start = moment(start).locale('fr-ca');
-        var french_end = moment(end).locale('fr-ca');
-        if (start.format("DMY") == end.format("DMY")){
-            if(Cookies.get('current_locale') == "en-CA"){
-                val.dates = start.format("MMM D");
-            }
-            if(Cookies.get('current_locale') == "fr-CA"){
-                val.dates = french_start.format("DD MMM");
-            }
+        
+        if (start.format("DMY") == end.format("DMY")) {
+            val.dates = start.format("MMM D");
         } else {
-            if(Cookies.get('current_locale') == "en-CA"){
-                val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-            }
-            if(Cookies.get('current_locale') == "fr-CA"){
-                val.dates = french_start.format("DD MMM") + " - " + french_end.format("DD MMM");
-            }
+            val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
         
         var rendered = Mustache.render(template_html,val);
@@ -617,13 +549,13 @@ function renderStoreList(container, template, collection, starter, breaker){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
     $.each( collection , function( key, val ) {
-        if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+        if (!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0) {
             val.alt_store_front_url = "";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url);    
         }
         
-        if(val.categories != null){
+        if (val.categories != null) {
             try {
                 val.cat_list = val.categories.join(',');
             } catch(err) {
@@ -632,7 +564,7 @@ function renderStoreList(container, template, collection, starter, breaker){
         }
         
         var current_initial = val.name[0];
-        if(store_initial.toLowerCase() == current_initial.toLowerCase()){
+        if (store_initial.toLowerCase() == current_initial.toLowerCase()) {
             val.initial = "";
             val.show = "display:none;";
         } else {
@@ -641,13 +573,13 @@ function renderStoreList(container, template, collection, starter, breaker){
             val.show = "display:block;";
         }
         
-        if (val.promotions != null){
+        if (val.promotions != null) {
             val.promotion_exist = "display:inline-block";
         } else {
             val.promotion_exist = "display:none";
         }
         
-        if (val.jobs != null){
+        if (val.jobs != null) {
             val.job_exist = "display:inline-block";
         } else {
             val.job_exist = "display:none";
@@ -677,7 +609,8 @@ function renderStoreDetails(container, template, collection, slug){
         if (val.store_front_alt_url_abs.indexOf('missing.png') > 0) {
             val.show_store_front = "display: none"
         }
-        if (val.website != null && val.website.length > 0){
+        
+        if (val.website != null && val.website.length > 0) {
             val.show = "display:block";
         } else {
             val.show = "display:none";
