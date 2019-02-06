@@ -1,21 +1,21 @@
 <div class="main_banner text-center">
-    <h2 data-i18n="stores.title"></h2>
-    <p data-i18n="inside_page.header_tagline"></p>
+    <h2>Stores</h2>
+    <p></p>
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-6">
-            <h5 class="active_heading" data-i18n="inside_page.stores"></h5>
+            <h5 class="active_heading">Stores</h5>
         </div>
         <div class="col-md-6">
-            <h5><a href="/map" data-i18n="inside_page.map"></a></h5>
+            <h5><a href="/map">Shopping Map</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
         <label class="accessibility" for="option_selector">Select an Option</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>Tap For More Options</option>
-            <option value="/map" data-i18n="inside_page.map"></option>
+            <option value="/map">Shopping Map</option>
         </select>
     </h5>
 </div>
@@ -44,24 +44,8 @@
                 </div>
             </div>
             <div class="col-md-4 hidden_phone">
-                <!--<div id="new_stores">-->
-                <!--    <p class="category_header" data-i18n="stores.new_stores"></p>-->
-                <!--    <div id="new_store_container">-->
-                <!--        <script id="new_store_template" type="x-tmpl-mustache/text">-->
-                <!--            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>  -->
-                <!--        </script>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <!--<div id="coming_soon_stores">-->
-                <!--    <p class="category_header" data-i18n="stores.coming_soon"></p>-->
-                <!--    <div id="coming_soon_container">-->
-                <!--        <script id="coming_soon_template" type="x-tmpl-mustache/text">-->
-                <!--            <h5 class="category_name"><a href="/stores/{{slug}}">{{name}}</a></h5>    -->
-                <!--        </script>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <p class="category_header" data-i18n="stores.category"></p>
-                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores" data-i18n="stores.categories_all"></a></h5>
+                <p class="category_header">Categories</p>
+                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
                 <div id="category_container" class="hidden_phone">
                     <script id="category_template" type="x-tmpl-mustache/text">
                         <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{cat_name}}</a></h5>
@@ -116,31 +100,17 @@
             $(".mobile_cat").click(function(e){
                 cat_id = $(this).attr('cat_id');
                 show_mobile_cat_stores(cat_id, $(this));
-                 $("#category_selector_container").slideToggle();
-                 $(".padded_border").toggle()
-            })
+                $("#category_selector_container").slideToggle();
+                $(".padded_border").toggle()
+            });
             
             show_cat_stores();
-            
-            var new_stores = getNewStoresList();
-            if (new_stores.length > 0){
-                renderGeneral("#new_store_container","#new_store_template", new_stores);
-            } else {
-                $('#new_stores').hide();
-            }
-            
-            var coming_soon_stores = getComingSoonList();
-            if (coming_soon_stores.length > 0){
-                renderGeneral("#coming_soon_container","#coming_soon_template", coming_soon_stores);
-            } else {
-                $('#coming_soon_stores').hide();
-            }
-            
             show_content();
         }
         
 		loadMallDataCached(renderAll); 
-    })
+    });
+    
     function show_mobile_cat_stores(cat_id, el){
         if(cat_id == 0){
             $('.main_row .col-md-6').removeClass('full_width')
