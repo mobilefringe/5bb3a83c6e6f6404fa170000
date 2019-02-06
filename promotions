@@ -24,7 +24,7 @@
                                 </p>
                                 <div class="promo_list_desc">{{description_short}}</div>
                                 <a class="newsletter_btn animated_btn inside_btn" href="/promotions/{{slug}}">
-                                    View Deals Details <i class="fa fa-angle-right"></i>
+                                    View Promotion Details <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
                         </div>
