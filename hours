@@ -1,20 +1,20 @@
 <div class="main_banner text-center">
-    <h2 data-i18n="hours.title"></h2>
-    <p data-i18n="inside_page.header_tagline"></p>
+    <h2>Shopping Hours</h2>
+    <p></p>
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
         <div class="col-md-3">
-            <h5 class="active_heading" data-i18n="inside_page.hours"></h5>
+            <h5 class="active_heading">Shopping Hours</h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/contact-us" data-i18n="inside_page.contact"></a></h5>
+            <h5><a href="/contact-us">Contact Us</a></h5>
         </div>
          <div class="col-md-3">
-            <h5><a href="/pages/marlborough-security" data-i18n="inside_page.security"></a></h5>
+            <h5><a href="/pages/marlborough-security">Security</a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/leasing" data-i18n="inside_page.leasing"></a></h5>
+            <h5><a href="/leasing">Leasing</a></h5>
         </div>
        
     </div>
@@ -22,9 +22,9 @@
         <label class="accessibility" for="option_selector">Select an Option</label>
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>Tap For More Options</option>
-            <option value="/contact-us" data-i18n="inside_page.contact"></option>
-            <option value="/pages/marlborough-security" data-i18n="inside_page.security"></option>
-            <option value="/leasing" data-i18n="inside_page.leasing"></option>
+            <option value="/contact-us">Contact Us</option>
+            <option value="/pages/marlborough-security">Security</option>
+            <option value="/leasing">Leasing</option>
         </select>
     </h5>
 </div>
