@@ -1,0 +1,93 @@
+<div class="main_banner text-center" style="padding-bottom: 30px;">
+    <h2>Blog</h2>
+    <p></p>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container">
+    <div class="margin_25_across">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="post_container">
+                    <script id="post_template" type="x-tmpl-mustache/text">
+                        <div class="row promo_item hidden_now"  id="latest_show_{{counter}}">
+                            <div class="col-md-3">
+                                <div class="cropped_image">
+                                    <img src="{{image_url}}" alt="{{title}}" />
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="promo_list_name">{{title}}</h2>
+                                <p>
+                                    <span data-i18n="blog.posted"></span>
+                                    <span class="promo_dates">{{published_on}}</span>
+                                </p>
+                                <div class="promo_list_desc">{{description_short}}</div>
+                                <a class="newsletter_btn animated_btn inside_btn" href="/posts/{{slug}}">
+                                    Read More <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </script>
+                </div>    
+                <div class="row load_more">
+                    <input type="hidden" value="1" id="num_loaded_1" />
+                    <a href="#" class="red" id="load_more_posts_1">
+                        <p class="loaded_posts" id="loaded_posts_1">
+                            <span class="post_details_link">More +</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll (){
+            var banner_repo = getRepoDetailsByName("Blog Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".main_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
+                }
+            }
+            
+            var blog = getBlogDataBySlug("marlborough-main").posts
+            var posts = blog.sortBy(function(o){ return o.publish_date}).reverse();
+            renderPosts('#post_container', '#post_template', posts);
+            
+            //load the first 10 blog posts first
+            for(i = 0; i < 10; i++){
+                var id = i.toString();
+                $('#latest_show_' + id ).fadeIn();
+            }
+            //set the loaded number to 10
+            $('#num_loaded_1').val(10);
+            
+            $('#load_more_posts_1').click(function(e){
+                var i = $('#num_loaded_1').val();
+                load_more_1(i);
+                e.preventDefault();
+            });
+            show_content();
+        }
+		loadMallDataCached(renderAll);
+		function load_more_1(num){
+            var n = parseInt(num);
+            for(i = n; i < n + 10; i++){
+                var id = i.toString();
+                $('#latest_show_' + id ).fadeIn();
+            }
+            var blog_posts = getBlogDataBySlug("marlborough-main").posts.sortBy(function(o){ return o.publish_date}).reverse();
+            var posts = blog_posts.splice(10);
+            var total_posts = posts.length;
+            if(i >= total_posts){
+                $('#loaded_posts_1').hide();
+                // $('#all_loaded_1').show();
+            }
+            $('#num_loaded_1').val(i);
+        }
+    })
+</script>
