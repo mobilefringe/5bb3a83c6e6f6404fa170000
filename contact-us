@@ -1,6 +1,6 @@
 <div class="main_banner text-center">
     <h2>Contact Us</h2>
-    <p data-i18n="inside_page.header_tagline"></p>
+    <p></p>
 </div>
 <div class="store_list_head main_container">
     <div class="row hidden_phone">
@@ -11,10 +11,10 @@
             <h5 class="active_heading">Contact Us</h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/pages/marlborough-security" data-i18n="inside_page.security"></a></h5>
+            <h5><a href="/pages/marlborough-security">Security</a></h5>
         </div>
         <div class="col-md-3">
-            <h5><a href="/leasing" data-i18n="inside_page.leasing"></a></h5>
+            <h5><a href="/leasing">Leasing</a></h5>
         </div>
     </div>
     <h5 class="text-center tap_here show_phone">
@@ -22,8 +22,8 @@
         <select id="option_selector" class="link_selector">
             <option value="" disabled selected>Tap For More Options</option>
             <option value="/hours">Hours</option>
-            <option value="/about-us" data-i18n="inside_page.about"></option>
-            <option value="/directions-and-parking" data-i18n="inside_page.directions"></option>
+            <option value="/pages/marlborough-security">Security</option>
+            <option value="/leasing">Leasing</option>
         </select>
     </h5>
 </div>
@@ -52,12 +52,7 @@
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/marlborough-contact-us.json"
             $.getJSON(pages_json).done(function(data) {
-                if(Cookies.get('current_locale') == "en-CA"){
-                    $('#mm_page_content').html(data.body);
-                }
-                if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#mm_page_content').html(data.body_2);
-                }
+                $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
