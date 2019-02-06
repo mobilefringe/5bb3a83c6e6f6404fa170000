@@ -128,31 +128,23 @@
             prefix = get_prefix();
             var pages_json = prefix + "/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                if(Cookies.get('current_locale') == "en-CA"){
-                    $('#mm_page_title').html(data.title.toUpperCase());
-                    $('#mm_page_content').html(data.body);
-                }
-                if(Cookies.get('current_locale') == "fr-CA"){
-                    $('#mm_page_title').html(data.title_2.toUpperCase());
-                    $('#mm_page_content').html(data.body_2);
-                }
+                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
             // check if top header should be shown 
-            if(slug == 'marlborough-security'){
+            if (slug == 'marlborough-security') {
                 $("#security").show();
-            }
-            else if(slug == 'marlborough-act-green-initiatives'){
+            } else if (slug == 'marlborough-act-green-initiatives') {
                 $("#act_green").show();
-            }
-            else if (slug == 'marlborough-community-donations'){
+            } else if (slug == 'marlborough-community-donations') {
                 $("#community").show();
-            }
-            else if( slug == "marlborough-mall-walking-program") {
-                 $("#mall_walkings").show();
+            } else if ( slug == "marlborough-mall-walking-program") {
+                $("#mall_walkings").show();
             }
             
             show_content();
