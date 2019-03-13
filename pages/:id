@@ -1,0 +1,154 @@
+<div class="inside_banner text-center">
+    <h2 id="mm_page_title"></h2>
+    <!--<p></p>-->
+</div>
+<div class="store_list_head main_container hidden_now" id="security">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5><a href="/hours">Hours</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/contact-us">Contact Us</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 class="active_heading">Security</h5>
+        </div>
+        <div class="col-md-3">
+            <h5 ><a href="/leasing">Leasing</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>Tap For More Options</option>
+            <option value="/hours">Hours</option>
+            <option value="/contact-us">Contact Us</option>
+            <option value="/leasing">Leasing</option>
+        </select>
+    </h5>
+</div>
+<div class="store_list_head main_container hidden_now" id="act_green">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5 ><a href="/services">Services</a></h5>
+        </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/marlborough-community-donations">Community</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/pages/marlborough-mall-walking-program">Mall Walkings</a></h5>
+        </div>
+         <div class="col-md-3">
+            <h5 class="active_heading">ACT Green</h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>Tap For More Options</option>
+            <option value="/services">Services</option>
+            <option value="/pages/marlborough-community-donations">Community</option>
+            <option value="/pages/marlborough-mall-walking-program">Mall Walkings</option>
+        </select>
+    </h5>
+</div>
+<div class="store_list_head main_container hidden_now" id="community">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5 ><a href="/services">Services</a></h5>
+        </div>
+         <div class="col-md-3">
+            <h5 class="active_heading">Community</h5>
+        </div>
+        <div class="col-md-3">
+            <h5><a href="/pages/marlborough-mall-walking-program">Mall Walkings</a></h5>
+        </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/marlborough-act-green-initiatives">ACT Green</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>Tap For More Options</option>
+            <option value="/services">Services</option>
+            <option value="/pages/marlborough-mall-walking-program">Mall Walkings</option>
+            <option value="/pages/marlborough-act-green-initiatives">ACT Green</option>
+        </select>
+    </h5>
+</div>
+<div class="store_list_head main_container hidden_now" id="mall_walkings">
+    <div class="row hidden_phone">
+        <div class="col-md-3">
+            <h5><a href="/services">Services</a></h5>
+        </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/marlborough-community-donations">Community</a></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 class="active_heading">Mall Walkings</h5>
+        </div>
+         <div class="col-md-3">
+            <h5><a href="/pages/marlborough-act-green-initiatives">ACT Green</a></h5>
+        </div>
+    </div>
+    <h5 class="text-center tap_here show_phone">
+        <label class="accessibility" for="option_selector">Select an Option</label>
+        <select id="option_selector" class="link_selector">
+            <option value="" disabled selected>Tap For More Options</option>
+            <option value="/services">Services</option>
+            <option value="/pages/marlborough-community-donations">Community</option>
+            <option value="/pages/marlborough-act-green-initiatives">ACT Green</option>
+        </select>
+    </h5>
+</div>
+<div class="margin_20"></div>
+<div class="content_container main_container mobile_padding pages_text">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banner_repo = getRepoDetailsByName("Pages Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").css({ "background": "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(" + banner_image + ") center center" });
+                }
+            }
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            // check if top header should be shown 
+            if (slug == 'marlborough-security') {
+                $("#security").show();
+            } else if (slug == 'marlborough-act-green-initiatives') {
+                $("#act_green").show();
+            } else if (slug == 'marlborough-community-donations') {
+                $("#community").show();
+            } else if ( slug == "marlborough-mall-walking-program") {
+                $("#mall_walkings").show();
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
