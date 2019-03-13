@@ -1617,9 +1617,9 @@ h4 {
     font-family: $font_family;
     font-weight: 300;
     font-size: 14px;
-    color: $primary;
+    color: #0a8081;
     &:hover{
-        color: $primary;
+        color: #0a8081;
     }
 }
 
