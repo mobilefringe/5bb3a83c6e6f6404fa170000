@@ -2601,6 +2601,9 @@ g.mapplic-active > * {
     }
     #mm_page_content {
         margin-bottom: 20px;
+        a {
+            color: #0a8081;
+        }
     }
     /* BLOG DETAILS */
     .post_details_image {
