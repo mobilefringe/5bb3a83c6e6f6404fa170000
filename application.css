@@ -2603,6 +2603,9 @@ g.mapplic-active > * {
         margin-bottom: 20px;
         a {
             color: #0a8081;
+            &:hover {
+                color: #4c4c4c;
+            }
         }
     }
     /* BLOG DETAILS */
