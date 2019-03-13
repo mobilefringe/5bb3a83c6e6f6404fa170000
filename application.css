@@ -1645,6 +1645,15 @@ h4 {
 .feature_item .position_relative{
     width:100%;
 }
+
+#mm_page_content {
+    a {
+        color: #0a8081;
+        &:hover {
+            color: #4c4c4c;
+        }
+    }
+}
 /* *** CONTEST *** */
 #contest_form {
     label {
