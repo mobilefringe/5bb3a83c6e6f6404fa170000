@@ -225,7 +225,6 @@
     <section class="yield">
         {{yield}}
     </section>
-
 </body>
 
 </html>
