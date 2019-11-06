@@ -216,7 +216,7 @@ function svgList() {
 //     $('.stores_table').hide();
 // }
 function drop_pin(id, map){
-console.log('id', id)
+
     var coords = map.get_coords(id);
     var height = parseInt(coords["height"])
     var width = parseInt(coords["width"])
