@@ -47,7 +47,7 @@
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <script>
-        setEndPoint('//marlborough.mallmaverickstaging.com/api/v4/marlborough/all.json');
+        setEndPoint('//marlborough.mallmaverick.com/api/v4/marlborough/all.json');
         setSocialEndPoint('//marlborough.mallmaverick.com/api/v4/marlborough/social.json');
     </script>
     
